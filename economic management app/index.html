@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic management app</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <button class="subBtn"></button>
+    <div class="container">
+        <button class="new">Add New</button>
+        <button class="old">Update</button>
+        <div class="outer">
+            <div class="insert">
+                <h2 class="close">&times</h2>
+                <h2>New Operation</h2>
+
+                <span class="uId"> Update Id</span>
+                <input type="number" class="update">
+                Investment
+                <input type="number" class="investment" placeholder="Type your investment" required>
+                Due Amount
+                <input type="number" class="due" placeholder="Type your Due Amount" required>
+                Purpose
+                <textarea class="purpose" placeholder="Type your purpose" required></textarea>
+                Date
+                <input type="date" class="date" required>
+                Time
+                <input type="time" class="time" required>
+                <button class="submit" type="submit">Submit</button>
+
+            </div>
+        </div>
+        <table class="crud">
+            <tr>
+                <th>Id</th>
+                <th>Purpose</th>
+                <th>Investment</th>
+                <th>Due Amount</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Delete</th>
+            </tr>
+            <tr class="example">
+                <td>1</td>
+                <td>Buy a Shirt</td>
+                <td><span class="ccurrency">Rs </span>100</td>
+                <td><span class="ccurrency">Rs </span>500</td>
+                <td>5/8/2021</td>
+                <td>6:13 PM</td>
+                <td class="delete">Delete</td>
+            </tr>
+        </table>
+        <strong style="color:red;" class="fd">Note: This data is just for example. <br>This data will be vanish after
+            your first updation.</strong>
+    </div>
+</body>
+<script src="./js/style.js"></script>
+<script src="./js/crud.js"></script>
+<script src="./jsindex.js"></script>
+
+
+</html>

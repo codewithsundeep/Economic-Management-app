@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: xx-small;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+table th,td{
+border: 2px solid tomato;
+/* padding: 1px; */
+border-radius: 5px;
+background-color: rgb(45, 148, 196);
+box-shadow: 0px 0px 11px 1px rgb(0 0 0 / 50%);
+color:rgb(235, 177, 177);
+font-weight: 600;
+font-family: tahoma;
+box-sizing: content-box;
+}
+table{
+    width: 100vmin;
+
+}
+th,td{
+    width: 5px;
+    font-size: xx-small;
+}
+th{
+    background-color: rgb(96, 133, 115) !important;
+}
+.old, .new{
+    width: 50%;
+    height: 20px;
+    background-color: rgb(45, 148, 196);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 3px;
+    color: white;
+    padding: 3px;
+    font-weight: 600;
+    font-family: tahoma;
+    font-size: xx-small;
+}
+.insert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: fit-content;
+   
+    background-color: cadetblue;
+    padding: 5px;
+    box-shadow: 0px 0px 8px rgb(0,0,0,0.5);
+    z-index: 11;
+    border-radius: 20px;
+   color: sienna;
+    border: 5px solid white;
+    margin: auto;
+ 
+
+
+}
+.outer{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top:5% ;
+}
+.insert input,.insert textarea,.insert button{
+width: 90%;
+outline: none;
+border-radius: 5px;
+color:whitesmoke;
+border: none;
+margin:2px 0px;
+}
+.insert input, .insert textarea{
+    background-color:teal ;
+    padding: 5px;
+    
+}
+.insert button{
+    background-color: darkcyan;
+    padding: 2px;
+}
+.insert .close{
+    align-self: flex-end;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(62, 138, 115);
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(128, 39, 39);
+    border:1px solid rgb(233, 162, 162);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.insert h2{
+    color: saddlebrown;
+}
+.delete{
+    background-color: tomato;
+    border-radius: 5px;
+    color: red;
+    cursor: pointer;
+}
+.subBtn{
+    display: none;
+}
